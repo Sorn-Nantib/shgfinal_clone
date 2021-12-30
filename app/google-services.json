@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "336503395947",
+    "project_id": "shgclone-88535",
+    "storage_bucket": "shgclone-88535.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336503395947:android:adc8539ebdb58139ee432e",
+        "android_client_info": {
+          "package_name": "com.example.shg_clone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "336503395947-s9bm9uabfd04ve1retvl589nlvor9fii.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHKrsjoPAfT5FhPJbD1DP6L2HrFaRzHbQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "336503395947-s9bm9uabfd04ve1retvl589nlvor9fii.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

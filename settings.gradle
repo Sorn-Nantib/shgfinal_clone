@@ -1,0 +1,2 @@
+rootProject.name='shg_clone'
+include ':app'

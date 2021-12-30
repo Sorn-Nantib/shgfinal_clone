@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterScreen">
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_marginTop="170dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/big_shg_logo"/>
+    <TextView
+        android:layout_width="wrap_content"
+      android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_marginTop="40dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please enter your ZPoin account number. We will send you 4-digit OTP code to verify."
+        android:layout_marginTop="20dp"
+        android:paddingStart="55dp"
+        android:paddingEnd="55dp"
+        android:textSize="15dp"
+
+        android:textColor="@color/black"/>
+    <TextView
+        android:textFontWeight="400"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ZPoin Account Number"
+        android:layout_marginTop="40dp"
+        android:paddingStart="5dp"
+
+        android:textSize="15dp"
+
+        android:textColor="#4F4F4F"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.hbb20.CountryCodePicker
+
+                android:id="@+id/ccp"
+                app:ccp_defaultPhoneCode="855"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <EditText
+                android:minLines="8"
+                android:maxLength="10"
+                android:id="@+id/editTextPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:inputType="phone"
+
+                />
+        </LinearLayout>
+        <Button
+            android:id="@+id/verify_btn"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verify"
+
+            android:background="@drawable/custom_button"
+            android:textColor="@color/white"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+
+            />
+
+
+
+
+</LinearLayout>
