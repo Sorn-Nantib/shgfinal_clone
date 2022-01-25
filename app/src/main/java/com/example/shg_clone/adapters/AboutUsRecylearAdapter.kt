@@ -7,6 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.text.HtmlCompat
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.shg_clone.DataAboutUs
 import com.example.shg_clone.PostItem
 import com.example.shg_clone.R
@@ -30,7 +31,12 @@ class AboutUsRecylearAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         (holder as ViewHolder).textView.text = mList[position].title
         holder.description.text = HtmlCompat.fromHtml(mList[position].description?:"", HtmlCompat.FROM_HTML_MODE_COMPACT)
-        //holder.imageView.image= Glide.with(this).load("http://goo.gl/gEgYUd").into(imageView);
+        //holder.imageView.image=null
+        holder.imageView.apply {
+            Glide.with(holder.imageView.context)
+                .load(mList[position].image)
+                .into(holder.imageView)
+        }
     }
 
 

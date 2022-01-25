@@ -6,6 +6,21 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".AboutUs">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolba_aboutUs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+
+        app:logo="@drawable/shg_logo"
+        android:gravity="center_vertical"
+        app:navigationIcon="@drawable/ic_iconback"
+        app:title="About Us"
+        app:titleMarginTop="17dp"
+        app:titleMarginStart="10dp"
+        app:titleTextColor="@color/white">
+
+    </androidx.appcompat.widget.Toolbar>
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rc_about_us"
         android:layout_width="match_parent"

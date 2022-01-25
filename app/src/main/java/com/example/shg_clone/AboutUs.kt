@@ -36,29 +36,6 @@ class AboutUs : AppCompatActivity() {
 
         val retrofitData = retrofitBuilder.getData()
         retrofitData.enqueue(object : Callback<AboutUsX> {
-//            override fun onResponse(
-//                call: Call<Any?>,
-//                response: Response<List<PostItem>?>
-//            ) {
-//
-//                var data = "test"
-//                var result = response
-//            }
-//             val responseBody = response.body()!!
-//                val myStringBuilder = StringBuilder()
-//                for (myData in responseBody){
-//                    myStringBuilder.append(myData.title)
-//                    myStringBuilder.append("\n")
-//                    myStringBuilder.append("\n")
-//                }
-//                txtId.text = myStringBuilder
-//                print("work")
-//            }
-
-//            override fun onFailure(call: Call<List<PostItem>?>, t: Throwable) {
-//                Log.d("MainActivity","onFailure: "+t.message)
-//                print("not work")
-//            }
 
             override fun onResponse(call: Call<AboutUsX>, response: Response<AboutUsX>) {
                // Log.d("MainActivity","onFailure: "+t.message)
