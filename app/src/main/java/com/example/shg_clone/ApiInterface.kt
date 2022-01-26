@@ -1,8 +1,9 @@
 package com.example.shg_clone
-
 import retrofit2.Call
+import retrofit2.http.Body
 import retrofit2.http.GET
 import retrofit2.http.Headers
+import retrofit2.http.POST
 
 interface ApiInterface {
     @Headers("Accept: application/json",
@@ -11,4 +12,16 @@ interface ApiInterface {
     @GET("api/v1/about-us")
     //  @GET("posts")
     fun getData(): Call<AboutUsX>
+
+    @Headers("Accept: application/json",
+        "Content-Type: application/json")
+    @POST("api/request-otp")
+    fun postLogin(@Body phone: Any): Call<DataLoginRes>
+
+    @Headers("Accept: application/json",
+        "Content-Type: application/json")
+    @POST("api/verify-otp")
+    fun postOTP(@Body phone: Any,@Body verify_code:Any): Call<DataOTP>
+
 }
+

@@ -29,78 +29,43 @@
         android:layout_marginTop="20dp"
         android:paddingStart="55dp"
         android:paddingEnd="55dp"
+        android:layout_gravity="center"
         android:textSize="15dp"
-
         android:textColor="@color/black"/>
     <TextView
         android:id="@+id/tv_phone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:layout_marginTop="0dp"
         android:paddingStart="55dp"
         android:layout_gravity="center"
         android:paddingEnd="55dp"
         android:textSize="15dp"
         android:textColor="@color/black"/>
-    <LinearLayout
-        android:layout_width="match_parent"
+    <com.chaos.view.PinView
+        android:id="@+id/pinView"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal">
-        <LinearLayout
+        android:layout_gravity="center"
+        android:cursorVisible="true"
+        android:hint="Hint."
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cursorColor="@color/colorPrimary"
+        app:cursorWidth="2dp"
+        app:itemCount="4"
+        app:itemHeight="48dp"
+        app:itemRadius="4dp"
+        app:itemSpacing="10dp"
+        app:itemWidth="48dp"
+        app:lineColor="@color/colorPrimary"
+        app:lineWidth="2dp"
+        app:viewType="rectangle" />
 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginEnd="10dp"
-            android:gravity="center_horizontal"
-            >
-            <EditText
-                android:id="@+id/et_1"
-                android:layout_weight="1"
-                android:layout_width="50dp"
-                android:textColor="@color/colorPrimary"
-                android:layout_height="50dp"
-                android:gravity="center"
-                android:maxLength="1"
-                android:layout_marginHorizontal="10dp"
-                android:background="@drawable/custom_input"
-                android:nextFocusForward="@id/et_2"/>
-            <EditText
-                android:id="@+id/et_2"
-                android:layout_weight="1"
-                android:textColor="@color/colorPrimary"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:gravity="center"
-                android:maxLength="1"
-                android:layout_marginHorizontal="10dp"
-                android:background="@drawable/custom_input"
-                android:nextFocusForward="@id/et_3"/>
-            <EditText
-                android:id="@+id/et_3"
-                android:textColor="@color/colorPrimary"
-                android:layout_weight="1"
-                android:layout_width="50dp"
-                android:maxLength="1"
-                android:layout_height="50dp"
-                android:gravity="center"
-                android:layout_marginHorizontal="10dp"
-                android:background="@drawable/custom_input"
-                android:nextFocusForward="@id/et_4"/>
-            <EditText
-                android:id="@+id/et_4"
-                android:layout_weight="1"
-                android:maxLength="1"
-                android:layout_width="50dp"
-                android:textColor="@color/colorPrimary"
-                android:layout_height="50dp"
-                android:gravity="center"
-                android:layout_marginHorizontal="10dp"
-                android:background="@drawable/custom_input"/>
-        </LinearLayout>
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
